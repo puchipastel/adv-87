@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C85</title>
+<link rel="stylesheet" href="style.css">
+
+<script src="fabric.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+/*la clase body backgroung añade un fondo a la pagina html*/
+<body class="body_backgorund">
+	<center>
+		/*el codigo css ya esta definido en style solo se esta añadiendo la clase en html*/
+		/*btn-primary añade un color azul para el fondo y un color blanco para la letra*/
+		<h2 class="btn-primary">MINECRAFT</h2>
+
+		/*añade rojo para el fondo y un color blanco en ancho y Altura*/
+		<div id="head_info" class="btn-danger">
+
+			/*Estas etiquetas se utilizan para mostrar el ancho y alto de los bloques (como la pared
+			, el tronco y otros) en la pantalla conforme incrementa o disminuye el tamaño.
+			 ➔ Establece el texto a 30 para las dos etiquetas, ya que queremos que el tamaño inicial de los bloques sea de 30px.*/
+			<h3>Ancho actual  = <span id="current_width">30</span></h3>
+			<h3>Altura actual  = <span id="current_height">30</span></h3>
+		</div>
+
+		<canvas width="1000" height="600" id="myCanvas"></canvas>
+
+	</center>
+	<script src="main.js"></script>
+</body>
+</html>
+
